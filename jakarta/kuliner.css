@@ -1,0 +1,128 @@
+:root {
+  --primary-bg: gray;
+  --secondary-bg: rgb(150, 146, 141);
+  --text-light: white;
+  --text-dark: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-bg);
+  font-family: sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  padding: 1em;
+}
+
+.logo img {
+  width: 7em;
+}
+
+.navlist {
+  font-size: 1.3em;
+  display: flex;
+  gap: 30px;
+  margin: auto;
+}
+
+.navlist a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navlist a:hover {
+  transform: scale(0.95);
+  color: var(--text-dark);
+}
+
+.btn {
+  margin: 0.5em;
+}
+
+.btn button p {
+  font-size: 1em;
+  padding: 1em;
+  background-color: var(--text-dark);
+  border-radius: 5%;
+  border: none;
+  transition: 0.3s;
+  color: gray;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn button p:hover {
+  transform: scale(1.1);
+  background-color: var(--text-light);
+  color: var(--text-dark);
+}
+
+.judul-kuliner h1 {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1em;
+  color: var(--text-light);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  padding: 1em;
+}
+
+.card {
+  background-color: var(--text-light);
+  max-width: 25em;
+  height: auto;
+  padding: 1.3em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.foto-card img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-family: sans-serif;
+  color: var(--text-dark);
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.card p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+  flex-grow: 1;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: white;
+}
